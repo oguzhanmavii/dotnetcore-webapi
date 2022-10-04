@@ -1,0 +1,16 @@
+POST
+httprepl https://localhost:7244/api/todoitems
+post -h Content-Type=application/json -c "{"name":"walk dog","isComplete":true}"
+
+post -h Content-Type=application/json -c "{"name":"walk dog","isComplete":true}"
+
+PUT
+
+httprepl https://localhost:7244/api/todoitems/1
+put -h Content-Type=application/json -c "{"id":1,"name":"feed fish","isComplete":true}"
+
+put -h Content-Type=application/json -c "{"id":1,"name":"feed fish","isComplete":true}"
+
+DELETE
+httprepl https://localhost:7244/api/todoitems/1
+delete
